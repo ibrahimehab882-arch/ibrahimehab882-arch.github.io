@@ -6,7 +6,7 @@
     <title>Privacy Policy — Outbreak Survivors</title>
     <meta
       name="description"
-      content="How Outbreak Survivors handles your data: what is stored on your device, what advertising and billing partners collect, and how to opt out."
+      content="How Outbreak Survivors handles your data: what is stored on your device, cloud sync, advertising, and billing."
     />
     <style>
       :root {
@@ -32,154 +32,58 @@
         border: 1px solid var(--border);
         border-radius: 1rem;
         padding: 2.5rem;
-        box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
       }
       h1 {
         color: var(--accent);
         font-size: 2.5rem;
-        margin: 0 0 0.5rem 0;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
+        margin-top: 0;
         text-shadow: 0 0 10px var(--accent-glow);
-      }
-      .sub {
-        font-size: 0.75rem;
-        color: #9ca3af;
-        margin-bottom: 3rem;
-        border-bottom: 1px solid var(--border);
-        padding-bottom: 1rem;
       }
       h2 {
         color: var(--accent);
-        font-size: 1.25rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.5rem;
         margin-top: 2.5rem;
-        margin-bottom: 1rem;
-        border-left: 3px solid var(--accent);
-        padding-left: 1rem;
       }
-      p {
-        margin-bottom: 1.25rem;
-      }
-      ul {
-        margin-bottom: 1.25rem;
-        padding-left: 1.5rem;
-      }
-      li {
-        margin-bottom: 0.5rem;
-      }
-      a {
-        color: var(--accent);
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      footer {
-        margin-top: 4rem;
-        padding-top: 2rem;
-        border-top: 1px solid var(--border);
-        font-size: 0.75rem;
-        color: #9ca3af;
-        text-align: center;
-      }
+      p { margin-bottom: 1.2rem; }
+      a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+      a:hover { border-bottom-color: var(--accent); }
+      .date { font-size: 0.85rem; opacity: 0.6; margin-bottom: 2rem; }
+      .footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border); font-size: 0.9rem; }
     </style>
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Privacy Policy</h1>
-        <p class="sub">Outbreak Survivors · Last updated 20 October 2026</p>
-      </header>
+      <h1>Privacy Policy</h1>
+      <div class="date">Outbreak Survivors · Last updated 23 October 2026</div>
 
-      <p>
-        This policy explains what information the game handles. We do not run accounts, we do not ask
-        for your name or email, and we never sell personal data.
-      </p>
+      <p>This policy explains how <strong>Outbreak Survivors</strong> handles your data. We do not run accounts, we do not ask for your name or email, and we never sell personal data.</p>
 
-      <h2>What stays on your device</h2>
-      <p>
-        Game progress (bio-capsules, upgrades, characters, missions, achievements, settings and
-        purchase entitlements) is stored locally on your device. It is never uploaded to us.
-        Uninstalling the app deletes it unless your platform backs it up.
-      </p>
+      <h2>Cloud Sync & Data Handling</h2>
+      <p>To protect your progress and verify purchases, game progress (bio-capsules, upgrades, characters, missions, achievements, and purchase entitlements) is synced to a secure cloud database provided by Supabase.</p>
+      <p>This data is linked to an anonymous identifier generated for your device. We do not collect your name, email, or any other personal contact information. We use this data only to restore your progress if you reinstall the app and to prevent cheating.</p>
 
       <h2>Advertising</h2>
-      <p>
-        The game shows optional rewarded videos and, occasionally, interstitial ads through Google
-        AdMob. To serve ads, Google and its partners may collect your advertising ID, IP address,
-        device information and ad interaction data.
-      </p>
-      <p>
-        Where required by law we ask for your consent before the first ad request. You can change or
-        withdraw that choice at any time from the privacy options form in the app settings. You can
-        also reset or limit ad personalisation in your device settings (Android: Settings, Privacy,
-        Ads).
-      </p>
-      <p>
-        Rewarded videos are always opt-in: nothing is unlocked and no reward is granted unless you
-        choose to watch one.
-      </p>
-      <p>
-        You can permanently remove all forced interstitials with the one-time "Remove Ads" purchase;
-        rewarded videos stay optional.
-      </p>
-      <p>
-        Google's handling of ad data is described at
-        <a href="https://policies.google.com/technologies/partner-sites" target="_blank"
-          >policies.google.com/technologies/partner-sites</a
-        >.
-      </p>
+      <p>The game shows optional rewarded videos and interstitial ads through Google AdMob. To serve ads, Google and its partners may collect your advertising ID, IP address, device information and ad interaction data. Where required by law we ask for consent first, and you can change your choice at any time from the consent form in the app.</p>
+      <p>Rewarded videos are always opt-in. You can remove all forced interstitials permanently with the one-time “Remove Ads” purchase.</p>
+      <p>Google’s handling of ad data is described at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
       <h2>Purchases</h2>
-      <p>
-        In-app purchases and subscriptions are processed by Google Play Billing. We never receive or
-        store your card details. Google shares only the confirmation needed to unlock the item, and we
-        store that entitlement locally so your items survive an app restart.
-      </p>
+      <p>In-app purchases and subscriptions are processed by Google Play Billing and verified by our secure server. We never receive or store your card details. We store a record of the purchase token and the entitlement in our cloud database to ensure your items are delivered and protected.</p>
 
       <h2>Analytics</h2>
-      <p>
-        We record anonymous gameplay events (for example: a run started or ended, an upgrade was
-        bought) to balance the game. These events contain no personal identifiers and are not linked
-        to your identity.
-      </p>
-
-      <h2>What we do not collect</h2>
-      <ul>
-        <li>No names, email addresses or phone numbers.</li>
-        <li>No contacts, photos, files, microphone or camera access.</li>
-        <li>No precise location data.</li>
-        <li>No user accounts, and no profile that could identify you.</li>
-      </ul>
+      <p>We record anonymous gameplay events to balance the game. These events contain no personal identifiers and are not linked to your identity.</p>
 
       <h2>Children</h2>
-      <p>
-        The game is not directed to children under 13 and we do not knowingly collect personal
-        information from them.
-      </p>
+      <p>The game is not directed to children under 13 and we do not knowingly collect personal information from them.</p>
 
-      <h2>Your choices</h2>
-      <p>
-        You can decline or change the in-app consent form at any time, reset or limit ad
-        personalisation in your device settings, buy "Remove Ads" to stop forced interstitials, or
-        clear all locally stored progress by clearing the app data.
-      </p>
+      <h2>Your Choices</h2>
+      <p>You can reset or limit ad personalisation in your device settings (Android: Settings → Privacy → Ads), decline the in-app consent form, or buy “Remove Ads”. You can also clear all locally stored progress by clearing the app’s data.</p>
 
-      <h2>Changes to this policy</h2>
-      <p>
-        If this policy changes, the "last updated" date above will change with it. Continued use of
-        the game after an update means you accept the revised policy.
-      </p>
-
-      <h2>Contact</h2>
-      <p>
-        Questions or removal requests:
-        <a href="mailto:onemovegames@gmail.com">onemovegames@gmail.com</a>
-      </p>
-
-      <footer>
-        This page covers the Android release of Outbreak Survivors, published by One Move Games.
-      </footer>
+      <div class="footer">
+        Questions or removal requests: <a href="mailto:onemovegames@gmail.com">onemovegames@gmail.com</a>
+      </div>
     </div>
   </body>
 </html>
